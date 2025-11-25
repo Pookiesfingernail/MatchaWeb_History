@@ -1,0 +1,648 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-image: url(JapaneseTea.webp); /* A navigation bar header with menu's*/
+    background-color: #6f9e4088;
+    opacity: 0.9;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 200%;
+    padding: 50px;
+    font-weight: bold;
+
+}
+
+/* How the bacground color originated */
+body {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* theme Mode button styling */
+button {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.614);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #618b37a9;
+
+}
+
+/* How the body of content pages will look like if its dark mode. */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: azure;
+}
+
+/* How the button looks like if its dark mode. */
+body.dark-mode button {
+    background-color: #555;
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background-color: #777;
+}
+/* End of theme button */
+
+/* Adapted code from CodingNinja, 2022*/
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000000a2;
+    height: 100%;
+    font-weight: bold;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+    height: 100%;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    color: #fdfdfd;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    background-color: #dcdcdc48;
+}
+
+footer {
+    color: rgb(170, 182, 170); /* Footer for all pages */
+    padding: 3px;
+}
+/* End of Adapting codes*/
+
+
+/*-----------------------------Index page----------------------*/
+
+.float-Matcha .float-img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    width: 30%;
+}
+
+.float-Matcha {
+    padding-top: 2rem;
+    margin-bottom: 0;
+    font-size: 17px
+}
+
+.float-role {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 2rem;
+}
+/* Role of Matcha */
+
+
+/* Matcha Brands */
+.BrandFlex-Layout h2, p{
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background:  rgb(37, 43, 37);
+    padding: 1rem;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.flex-item {
+    background: #58785d88;
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    transition: all 0.4s ease;
+}
+
+.flex-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Brand info */
+.BrandFlex-Layout {
+    text-align: center;
+    color: white;
+    background-color: rgb(99, 113, 99);
+    padding: 10px;
+}
+.info-layout li {
+    list-style-type: none;
+}
+
+.flex-item:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.flex-item:hover img {
+    transform: scale(1.03);
+}
+
+@media(max-width: 768px) {
+    .flex-item{
+        width: calc(50% - 20px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+}
+
+.BrandFlex-Layout 
+
+
+.Ippodo-float {
+    background-color: rgb(99, 113, 99);
+    color:  rgba(255, 255, 255, 0.674);
+    font-style: oblique;
+    padding: 5px;
+    border: 2px solid white;
+}
+.Ippodo-float p {
+    text-align: left;
+}
+.Ippodo-float li {
+    text-align: left;
+}
+
+.Marukyu-float {
+    background-color:   rgb(99, 113, 99);
+    color:  rgba(255, 255, 255, 0.674);
+    font-style: oblique;
+    padding: 5px;
+
+}
+.Marukyu-float p {
+    text-align: right;
+}
+.Marukyu-float li {
+    text-align: right;
+}
+
+.Nakamura-float {
+    padding: 5px;
+    font-style: oblique;
+}
+.Nakamura-float p {
+    text-align: left;
+}
+.Nakamura-float li {
+    text-align: left;
+}
+
+/*-----------------------end of index --------------------*/
+
+/*----------------------History------------------------*/
+.Origin {
+    background-color: #6F9E40;
+    color: rgba(255, 255, 255, 0.674);
+    text-align: center;
+    padding: 5px;
+}
+
+.Evo-float img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    width: 30%;
+    height: 100%;
+}
+
+.Evo-float {
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    font-size: 17px;
+    text-align: left;
+}
+
+.Modern-float img {
+    float: right;
+    width: 290px;
+    padding: 3px;
+}
+
+.Modern-float {
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    font-size: 17px;
+    text-align: right;
+}
+
+.Health-float {
+    text-align: center;
+    padding: 3px;
+
+}
+/*---------------- end of History --------------- */
+
+/*--------------------- Art -----------------*/
+
+.Tea-float img {
+    float: left;
+    margin: 0 4rem 5rem 5rem;
+    width: 280px;
+    height: 200px;
+
+}
+
+
+.Tea-float > p {
+    margin: 0rem 5rem 5rem 0;
+    text-align: left;
+}
+
+.Tea-float > h2 {
+    margin: 1rem 5rem;
+}
+
+
+.Latest-float img {
+    float: right;
+    margin: 1rem 3rem 2rem 5rem;
+    width: 300px;
+}
+
+.Latest-float > p {
+    text-align: right;
+    margin: 2rem 0 0 3rem;
+    padding: 1rem;
+}
+
+.Latest-float > h2 {
+    text-align: right;
+    margin: 0 5rem;
+}
+
+.Production img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.hover-zoom {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-layout {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.grid-item {
+    background: #6F9E40;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    aspect-ratio: 4 / 3;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Using CSS for hovering images as well */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    flex: 1 0 auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    transition: transform 0.4s ease;
+}
+
+/* for hovering images */
+.grid-item:hover img {
+    transform: scale(1.03);
+}
+
+.grid-item p {
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.grid-item:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .grid-container { /* How the elements will respon as a user using phone view */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*-------------------------- end of Art ------------ */
+
+/*----------------------------Customs---------------------------------*/
+
+/* Tea Ceremony layout */
+.Ceremony-float {
+    text-align: center;
+}
+
+.Ceremony-float .block2 {
+    display: block;
+    background: #6F9E40;
+    padding: 1rem;
+    margin: 0 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color:#fdfdfd;
+
+}
+
+/* Adapted code from Web Zone, 2020 */
+.Ceremony2-float img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    width: 290px;
+    padding: 2rem;
+    transition: transform 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.Ceremony2-float:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+/* end of adapted code */
+
+.Ceremony2-float > p {
+    text-align: left;
+    margin: 1rem 0 3rem 0;
+    padding: 5rem
+}
+
+@media(max-width: 600px) {
+    .Ceremony2-float{
+        width: calc(100% - 20px);
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+}
+
+/* Tea Tools Layout */
+.Tools-float {
+    margin: 0 2rem 0 3rem;
+}
+.Tools-float img {
+    float: right;
+    margin: 0 0 0 10rem;
+    width: 25%;
+    padding: 1rem;
+    transition: transform 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.Tools-float:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 600px) {
+    .Tools-float{
+        width: calc(100% - 20px);
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+}
+
+.Tools-float > p {
+    text-align: left;
+    margin: 0 0 3rem 0rem;
+    padding: 2rem;
+}
+
+.Tools-float > h2 {
+    text-align: left;
+    margin: 0 2rem 0;
+    padding-bottom: 0;
+    font-size: 50px;
+}
+
+/* Etiquette Layout */
+.Etiquette-float {
+    text-align: left;
+    margin: 6rem 5rem 6rem;
+    background-image: url(banner2.jpg);
+    background-size: cover;
+    margin: 100px;
+    width: 59%;
+    font-style: italic;
+    padding: 3rem;
+    font-weight: bold;
+}
+
+.Etiquette-float {
+    margin: 2rem 11rem 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .Etiquette-float {
+        margin: 2rem 2rem;
+} 
+
+}
+
+.Etiquette-float > h2 {
+    text-align: center;
+}
+
+/* Key Strengths layout */
+.key-float > p {
+    text-align: left;
+    margin: 0 1.5rem;
+}
+
+.key-float > h2 {
+    text-align: center;
+}
+
+.key-float .block {
+    display: block;
+    background: #6F9E40;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color:#fdfdfd;
+    text-align: center;
+}
+
+/*----------------- end Customs & Tradition ---------------------------------*/
+
+/* -------------------- Stories & Legends Page -------------------*/
+.History-float {
+    padding: 2rem;
+    font-size: 20px;
+}
+
+/* Eisai Story layout*/
+.Eisai-float img {
+    float: left;
+    margin: 0 3rem 3rem;
+    width: 25%;
+    transition: transform 0.4s ease;
+}
+
+.Eisai-float {
+    margin: 0 0 9rem;
+    background-color: #c8d2bdb7;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.Eisai-float:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15)
+}
+
+.Eisai-float:hover img {
+    transform: scale(1.03);
+}
+
+.Eisai-float h2 {
+    margin: 2rem 7rem;
+}
+
+.Eisai-float p {
+    margin: 2.5rem;
+}
+
+/* Samurai Story layout */
+.Samurai-float img {
+    float: right;
+    margin: 0 3rem;
+    width: 25%;
+    transition: transform 0.4s ease;
+}
+
+.Samurai-float {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.Samurai-float:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15)
+}
+
+.Samura-float:hover img {
+    transform: scale(1.03);
+}
+
+.Samurai-float h2 {
+    text-align: right;
+    margin: 2rem 4rem;
+}
+
+.Samurai-float p {
+    margin: 4rem 0 8rem;
+}
+
+.Samurai-float {
+    background-color: #c8d2bdb7;
+}
+
+/* Emperor story layout */
+.Emperor-float img {
+    float: left;
+    margin: 0 2rem 3rem 3.5rem;
+    width: 20%;
+    transition: transform 0.4s ease;
+}
+
+.Emperor-float:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15)
+}
+
+.Emperor-float:hover img {
+    transform: scale(1.03);
+}
+
+
+.Emperor-float p {
+    margin: 5rem 3rem 3rem 4rem;
+}
+
+.Emperor-float h2 {
+    margin: 2rem 3.5rem
+}
+
+.Emperor-float {
+    margin: 0 0 6.5rem;
+    background-color: #c8d2bdb7;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+/* How the random facts generator will look like in in styling */
+.Doyou-float {
+    text-align: center;
+    background-color: #6F9E40;
+    padding: 3rem;
+    border-radius: 25px;
+    color: white;
+}
+/* --------------------------- end of Stories and Legends ---------------------*/
+
